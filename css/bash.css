@@ -1,0 +1,40 @@
+body, #input{
+    background: black;
+    font-family: monospace;
+}
+
+.input-wrapper{
+    display: flex;
+}
+
+html, body{
+    color: white;
+    font-size: 1.25em;
+}
+
+#input{
+    flex: 2;
+    border: none;
+    font-size: 100%;
+}
+
+#input:focus{
+    outline: none;
+}
+
+#input, .input-wrapper{
+    color: white;
+}
+
+#output-wrapper div{
+    display: inline-block;
+    width: 100%;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
