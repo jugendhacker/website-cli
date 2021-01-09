@@ -46,6 +46,9 @@ const runCommand = (input) => {
         case "echo":
             runEcho(command, workingDir);
             break;
+        case "cowsay":
+            runCowsay(command, workingDir);
+            break;
         case "":
             break;
         default:
@@ -114,6 +117,22 @@ const runCat = (command, dir) => {
         output("cat: " + command[1] + ": No such file or directory");
     }
 };
+
+const runCowsay = (command, dir) => {
+    command.shift()
+    let words = command.join()
+    let cow = "<pre> "+("_".repeat(words.length+2))+"\n"
+    cow += "< "+words+" >\n"
+    cow += " "+("-".repeat(words.length+2))+"\n"
+    cow += "        \\   ^__^ \n"
+    cow += "         \\  (oo)\\_______ \n"
+    cow += "            (__)\\       )\\/\\ \n"
+    cow += "                ||----w | \n"
+    cow += "                ||     || </pre>"
+    output(cow)
+}
+
+    
 
 const runExit = (command, dir) => {
     output("Bye");
