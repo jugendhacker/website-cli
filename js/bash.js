@@ -120,7 +120,7 @@ const runCat = (command, dir) => {
 
 const runCowsay = (command, dir) => {
     command.shift()
-    let words = command.join()
+    let words = command.join(" ")
     let cow = "<pre> "+("_".repeat(words.length+2))+"\n"
     cow += "< "+words+" >\n"
     cow += " "+("-".repeat(words.length+2))+"\n"
