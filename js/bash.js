@@ -124,9 +124,9 @@ const runCowsay = (command, dir) => {
     let cow = "<pre> "+("_".repeat(words.length+2))+"\n"
     cow += "< "+words+" >\n"
     cow += " "+("-".repeat(words.length+2))+"\n"
-    cow += "        \\   ^__^ \n"
-    cow += "         \\  (oo)\\_______ \n"
-    cow += "            (__)\\       )\\/\\ \n"
+    cow += "       \\    ^__^ \n"
+    cow += "        \\   (oo)\_______ \n"
+    cow += "            (__)\       )\\/\\ \n"
     cow += "                ||----w | \n"
     cow += "                ||     || </pre>"
     output(cow)
