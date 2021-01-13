@@ -237,7 +237,7 @@ twitterFile.parent = socialMediaDir;
 socialMediaDir.children.push(twitterFile);
 //Mastodon
 let mastodonFile = new Tree.FSElement("mastodon.txt", Tree.ElementTypes.FILE, "" +
-    "In letzter Zeit bin ich auf Mastodon sehr aktiv. Unter dem Account <a href='https://social.wiuwiu.de/@jr' target='_blank'>@jr@social.wiuwiu.de</a> findest du mich dort!<br>" +
+    "In letzter Zeit bin ich auf Mastodon sehr aktiv. Unter dem Account <a href='https://social.anoxinon.de.de/@jr' target='_blank'>@jr@social.anoxinon.de</a> findest du mich dort!<br>" +
     "Gerne freue ich mich auch über den ein oder anderen Like und Follow 😉");
 mastodonFile.parent = socialMediaDir;
 socialMediaDir.children.push(mastodonFile);
